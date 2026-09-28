@@ -5,5 +5,5 @@
 <table border="1"><tr><th>ID</th><th>Judul</th><th>Aksi</th></tr>
 <?php foreach ($books as $b): ?>
 <tr><td><?php echo $b['id']; ?></td><td><?php echo $b['title']; ?></td>
-<td><a href="show.php?id=<?php echo $b['id']; ?>">Detail</a> | <a href="edit.php?id=<?php echo $b['id']; ?>">Edit</a> | <a href="#">Hapus</a></td></tr>
+<td><a href="show.php?id=<?php echo $b['id']; ?>">Detail</a> | <a href="edit.php?id=<?php echo $b['id']; ?>">Edit</a> | <a href="../../actions/books/destroy.php?id=<?php echo $b['id']; ?>" onclick="return confirm('Hapus data ini?')">Hapus</a></td></tr>
 <?php endforeach; ?></table>
