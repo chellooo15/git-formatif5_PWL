@@ -1,4 +1,4 @@
-<?php $pageTitle = 'Tambah Buku'; $pageSubtitle = 'Form tambah buku'; $categories = [['id' => 1, 'name' => 'Fiksi'], ['id' => 2, 'name' => 'Non-Fiksi']]; $authors = [['id' => 1, 'name' => 'Andrea Hirata'], ['id' => 2, 'name' => 'Tere Liye']]; ?>
+<?php $pageTitle = 'Tambah Buku'; $pageSubtitle = 'Form tambah buku'; require_once '../../repositories/category-repository.php'; require_once '../../repositories/author-repository.php'; $categories = getCategories(); $authors = getAuthors(); ?>
 <?php require_once '../../components/admin/sidebar.php'; ?>
 <?php require_once '../../components/admin/topbar.php'; ?>
 <form method="POST" action="../../actions/books/store.php">
