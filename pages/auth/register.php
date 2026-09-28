@@ -1,0 +1,1 @@
+<h1>Register</h1><form><input name="name" placeholder="Nama"><input name="email" placeholder="Email"><input type="password" name="password" placeholder="Password"><button>Daftar</button></form><p><a href="../../index.php">Kembali</a></p>
